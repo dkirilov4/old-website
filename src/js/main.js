@@ -11,10 +11,7 @@ var App = App || {};
 
     App.start = function()
     {
-        console.log(">> Starting...");
-
-        var dataLoader = new DataLoader();
-        dataLoader.initialize();
+      
     }
 
 }) ();
