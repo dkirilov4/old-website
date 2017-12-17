@@ -22,7 +22,7 @@
     color: white;
 }
 
-.topnav {
+.topnav ul{
   display: inline-block;
   list-style-type: none;
 }
