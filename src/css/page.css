@@ -5,6 +5,6 @@ body
 
 .content
 {
-  padding: 60px;
-  background-color: #ff0077;
+  padding: inherit;
+  background-color: #858c99;
 }
