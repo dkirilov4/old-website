@@ -22,7 +22,13 @@
     color: white;
 }
 
-.topnav ul{
-  display: inline-block;
-  list-style-type: none;
+.topnav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.topnav li {
+  display: inline;
+  list-style: none;
 }
