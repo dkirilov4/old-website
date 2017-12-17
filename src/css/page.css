@@ -1,11 +1,11 @@
-html, body, .container-fluid { height: 100% }
+html, body, .container{ height: 100% }
 
 body
 {
   background-color: #505866;
 }
 
-.container-fluid
+.container
 {
   display: table;
   width: 100%
