@@ -1,5 +1,5 @@
 .topnav {
-  background-color: #333;
+  background-color: #000000;
   border-width:1px 0;
   list-style:none;
   margin:0;
@@ -17,12 +17,12 @@
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #6B6E70;
     color: black;
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #45A29E;
   color: white;
 }
 
