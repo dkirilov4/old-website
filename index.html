@@ -22,13 +22,13 @@
 <body onload = "App.start();">
 
   <div id = "nav-placeholder">
-    <script>
-    $.get("navigation.html", function(data){
-        $("#nav-placeholder").replaceWith(data);
-    });
-    </script>
   </div>
 
+  <script>
+  $.get("nav.html", function(data){
+      $("#nav-placeholder").replaceWith(data);
+  });
+  </script>
 
 
 </body>
