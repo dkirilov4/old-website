@@ -5,6 +5,8 @@ body
 
 .content
 {
-  align-content: center;
   background-color: #858c99;
+
+  padding-bottom: 100%
+  margin-bottom: -100%;
 }
