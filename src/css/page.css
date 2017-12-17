@@ -1,31 +1,19 @@
-html, body, .container{ height: 100% }
+html, body { height: 100% }
 
 body
 {
   background-color: #505866;
 }
 
-.container
+.container-fluid
 {
-  display: table;
-  width: 100%
-  padding: 50px 0 0 0;
   min-height: 100%;
   overflow: hidden;
-  box-sizing: border-box;
-}
-
-.row {
-  height: 100%
-  display: table-row;
-}
-
-.row .no-float {
-  display: table-row;
-  float: none;
 }
 
 .content
 {
   background-color: #858c99;
+  margin-bottom: -100%;
+  padding-bottom: 100%;
 }
