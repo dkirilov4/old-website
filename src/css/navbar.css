@@ -1,8 +1,9 @@
 .topnav {
-  /* margin: 0 auto; */
-  width: 100px;
   background-color: #333;
   overflow: hidden;
+
+  margin: 0 auto;
+  width: 100px;
 }
 
 .topnav a {
@@ -12,6 +13,7 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  display: block;
 }
 
 .topnav a:hover {
@@ -22,4 +24,8 @@
 .topnav a.active {
     background-color: #4CAF50;
     color: white;
+}
+
+.topnav li {
+  float: left;
 }
