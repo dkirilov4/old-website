@@ -22,13 +22,13 @@
     color: white;
 }
 
-.topnav a.ul {
+ul {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-.topnav a.li {
+li {
   display: inline;
   list-style: none;
 }
