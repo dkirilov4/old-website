@@ -6,7 +6,9 @@ body
 .content
 {
   background-color: #858c99;
+}
 
-  padding-bottom: 100%
-  margin-bottom: -100%;
+.row {
+  height: 100%;
+  display: table-row;
 }
