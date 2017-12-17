@@ -21,14 +21,3 @@
     background-color: #4CAF50;
     color: white;
 }
-
-ul {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-li {
-  display: inline;
-  list-style: none;
-}
