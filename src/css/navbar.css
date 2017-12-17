@@ -1,7 +1,5 @@
 .topnav {
   background-color: #333;
-  /* overflow: hidden; */
-
   border:1px solid #ccc;
   border-width:1px 0;
   list-style:none;
@@ -32,19 +30,3 @@
 .topnav li {
   display: inline;
 }
-
-/* .topnav{
-    border:1px solid #ccc;
-    border-width:1px 0;
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
-}
-.topnav li{
-    display:inline;
-}
-.topnav a{
-    display:inline-block;
-    padding:10px;
-} */
