@@ -20,7 +20,7 @@
   <link rel = "stylesheet" href = "./src/css/page.css" />
   <link rel = "stylesheet" href = "./src/css/navbar.css" />
 
-<title>Projectsv</title>
+<title>Projects</title>
 
 <body>
 
@@ -49,8 +49,24 @@
                 </h4>
               </div>
               <div id="collapsePanel1" class="panel-collapse collapse">
+                <img src="./src/images/sensei.jpg" alt="Sensei" style="width: 100%; height: 100%;padding:10px 10px 10px 10px;">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu ullamcorper est. Vivamus luctus purus nulla. Ut nec pretium orci, nec consectetur diam. Curabitur sagittis, felis sit amet imperdiet convallis, dolor ligula tincidunt mi, ut dictum purus ante vel lacus. Pellentesque accumsan pretium aliquam. Integer maximus ex non dui tincidunt, quis cursus leo euismod. Cras euismod facilisis sagittis. Maecenas vitae malesuada leo, et eleifend mi. Morbi finibus arcu in est sodales consequat. In bibendum, mauris quis venenatis varius, felis metus malesuada sem, sit amet aliquam justo lacus vestibulum dui. Duis nec erat in tellus dapibus pharetra non eu lacus. Mauris accumsan enim quis facilisis vehicula.
+                  <b>Overview:</b><br>
+                  The <a href="https://www.evl.uic.edu/entry.php?id=1191" target="_blank">SENSEI Project</a> is about creating a new type of camera that can be used to capture images/videos in 360 degrees which include three-dimensional information about all the objects rendered in the scene. In its current state, the project predominantly deals with two different camera designs - stereo design and mono design. <a href="https://www.evl.uic.edu/entry.php?id=2229" target="_blank">More Info</a>
+                  <br><br>
+                  <b>Project Members:</b>
+                  <br>
+                  • Professor <a href="https://www.evl.uic.edu/dan/" target="_blank">Dan Sandin</a> – Project Supervisor<br>
+                  • Haoyu Wang – PhD Student<br>
+                  • Bartosz Kupiec – Undergraduate Student<br>
+                  • Dimitar Kirilov – Undergraduate Student (Me)<br>
+                  <br>
+                  <b>Work:</b>
+                  <br>
+                  The SENSEI Project was a collaborative work and was initially introduced to my partner (Bartosz Kupiec) and I in the beginning of May 2017, and the work we did carried over into our Fall 2017 semester. Together with Bartosz, we did the following (summarized): <br>
+                  • Utilized Unity 3D, Blender, and OpenCV in order to simulate real world cameras which capture images in 360 degrees along with real world depth information.<br>
+                  • Created point clouds from scene renderings with accurate real world coordinates
+                  • Created scripts in C#, C++, and Python to assist with image processing.
                 </p>
               </div>
             </div>
@@ -66,8 +82,40 @@
                 </h4>
               </div>
               <div id="collapsePanel2" class="panel-collapse collapse">
+                <img src="./src/images/vast.png" width="100%" height="100%">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu ullamcorper est. Vivamus luctus purus nulla. Ut nec pretium orci, nec consectetur diam. Curabitur sagittis, felis sit amet imperdiet convallis, dolor ligula tincidunt mi, ut dictum purus ante vel lacus. Pellentesque accumsan pretium aliquam. Integer maximus ex non dui tincidunt, quis cursus leo euismod. Cras euismod facilisis sagittis. Maecenas vitae malesuada leo, et eleifend mi. Morbi finibus arcu in est sodales consequat. In bibendum, mauris quis venenatis varius, felis metus malesuada sem, sit amet aliquam justo lacus vestibulum dui. Duis nec erat in tellus dapibus pharetra non eu lacus. Mauris accumsan enim quis facilisis vehicula.
+                  <b>Overview:</b><br>
+                  The Visual Analytics Science and Technology ( VAST ) Challenge is an annual contest with the goal of advancing the field of visual analytics through competition.
+                  <br><br>
+                  <b>Project Members:</b>
+                  <br>
+                  Primary:<br>
+                  • Isabel Lindmae – Undergraduate Student<br>
+                  • Dimitar Kirilov – Undergraduate Student (Me)<br>
+                  Secondary:<br>
+                  • G. Elisabeta Marai - Supervisor
+                  • Chihua Ma - PhD Student
+
+                  <br><br>
+                  <b>Other:</b>
+                  <br>
+                  <a href="https://today.uic.edu/uicevl-receives-honorable-mentions-in-vast-challenge">UIC News Article</a><br>
+
+                  <br>
+                  <b>Work:</b>
+                  <br>
+                  The VAST Challenge was meant as a collaborative to assignment intended to introduce us (the interns) to JavaScript, HTML, and CSS which led to a submission and high scores by the officials. The part assigned to Isabel and I was Mini Challenge 1 for which we created the following tool:<br>
+                  <a href="./src/images/mc1.jpg" target="_blank">
+                    <img src="./src/images/mc1.jpg" id="MC1" alt="LinkedIn" style="width:100%;height:100%;padding:10px 10px 10px 10px;">
+                  </a>
+                  <br>
+                  Mini Challenge 1 examined vehicle traffic through a fictional Nature Preserve and then determine patterns and unusual behaviors. The data provided was a map of the preserve which had 40 distinct locations with sensors tracking traffic, and a year’s log of the traffic each of those sensors recorded. Each sensor entry had a timestamp, a car id, a car type, and the name of the sensor at which a vehicle was detected. It’s important to note that the car ids provided were not unique and each person received a new id every time they entered the park.
+                  <br><br>
+                  For our tool, we wanted to be able to analyze the traffic data as a whole, and so we decided to make a heatmap of the number of readings each sensor registered per day. In our heatmap, each column represented a specific day of the year, each row was a different gate location, and the color intensity was the number of people who had passed through that sensor. Mapping the entirety of the data and allowing for different kinds of filters allowed for some interesting pattern observations. Further, we allowed the user to select a specific bin which showed a smaller heatmap representing the specific day’s activity by the hour.
+                  <br><br>
+                  Our second view was a 40 by 40 adjacency matrix of each location where each (row, column) represents a possible route between the two sensors. Each color represents a different number of people took likepassing through the preserve and the purples mean that people have gone through a path which isn’t directly possible. This indicated that either the sensors weren’t working at the time, or those people went off-road. This view also allowed us to see which routes were the most popular in the park. For example, most people who went through General Gate 7, went to a camping site after that.
+                  <br><br>
+                  Finally, our third view showed a histogram of the amount of time spent by each vehicle in the park. The histogram allowed for the user to click on a bin and inspect it in more detail. The notable discoveries from this view were the people spending less than 5 minutes in the park which indicated that they were cutting across it to avoid outside traffic, and the people spending more than a month at the park which is quite unusual.
                 </p>
               </div>
             </div>
@@ -85,8 +133,19 @@
                 </h4>
               </div>
               <div id="collapsePanel3" class="panel-collapse collapse">
+                <img src="./src/images/cs491p3.png" alt="Project3" style="width: 100%; height: 100%;padding:10px 10px 10px 10px;">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu ullamcorper est. Vivamus luctus purus nulla. Ut nec pretium orci, nec consectetur diam. Curabitur sagittis, felis sit amet imperdiet convallis, dolor ligula tincidunt mi, ut dictum purus ante vel lacus. Pellentesque accumsan pretium aliquam. Integer maximus ex non dui tincidunt, quis cursus leo euismod. Cras euismod facilisis sagittis. Maecenas vitae malesuada leo, et eleifend mi. Morbi finibus arcu in est sodales consequat. In bibendum, mauris quis venenatis varius, felis metus malesuada sem, sit amet aliquam justo lacus vestibulum dui. Duis nec erat in tellus dapibus pharetra non eu lacus. Mauris accumsan enim quis facilisis vehicula.
+                  <b>Overview:</b><br>
+                  This was a collaborative project made for my Virtual/Augmented Reality Course (CS491) at the University of Illinois at Chicago. The project features an interactive augmented reality multiplayer for mobile users. The goal of the game is to defend the center from oncoming waves of enemies using one of three selectable heroes, each of which has different abilities. The game features real world interraction as well by introducing cards which can be placed and augmented into the game. For more information please visit the <a href="https://docs.google.com/document/d/1cDfbqqS7CTr3yiZyTkJTd4O85wTjFMpzPjd480BXXec/edit?usp=sharing">Description/Sources</a> document created for the class which goes a lot more in depth about the game.
+                  <br><br>
+                  <b>Project Members:</b>
+                  <br>
+                  • Bartosz Kupiec – Undergraduate Student<br>
+                  • Dimitar Kirilov – Undergraduate Student (Me)<br>
+                  <br>
+                  <b>Demo:</b>
+                  <br>
+                  <iframe width="640" height="480" src="https://www.youtube.com/embed/9OyZYN384Nk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                 </p>
               </div>
             </div>
@@ -102,8 +161,20 @@
                 </h4>
               </div>
               <div id="collapsePanel4" class="panel-collapse collapse">
+                <img src="./src/images/cs491p2.png" alt="Project2" style="width: 100%; height: 100%;padding:10px 10px 10px 10px;">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu ullamcorper est. Vivamus luctus purus nulla. Ut nec pretium orci, nec consectetur diam. Curabitur sagittis, felis sit amet imperdiet convallis, dolor ligula tincidunt mi, ut dictum purus ante vel lacus. Pellentesque accumsan pretium aliquam. Integer maximus ex non dui tincidunt, quis cursus leo euismod. Cras euismod facilisis sagittis. Maecenas vitae malesuada leo, et eleifend mi. Morbi finibus arcu in est sodales consequat. In bibendum, mauris quis venenatis varius, felis metus malesuada sem, sit amet aliquam justo lacus vestibulum dui. Duis nec erat in tellus dapibus pharetra non eu lacus. Mauris accumsan enim quis facilisis vehicula.
+                  <b>Overview:</b><br>
+                  This was a collaborative project made for my Virtual/Augmented Reality Course (CS491) at the University of Illinois at Chicago. The goal of this project was to create an interactive virtual reality application, where the user can interact with the different views of over 600 solar systems. For more information please visit the <a href="https://docs.google.com/document/d/14zLQJuH7YPj44e_VuoBLGks3vp2FA6TAYLh_8xLTb9w/edit?usp=sharing">Description/Sources</a> document.
+                  <br><br>
+                  <b>Project Members:</b>
+                  <br>
+                  • Peter Hanula – Master Student (Me)<br>
+                  • Bartosz Kupiec – Undergraduate Student<br>
+                  • Dimitar Kirilov – Undergraduate Student (Me)<br>
+                  <br>
+                  <b>Demo:</b>
+                  <br>
+                  <iframe width="640" height="480" src="https://www.youtube.com/embed/CrGLgQc3Kb0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                 </p>
               </div>
             </div>
@@ -119,8 +190,19 @@
                 </h4>
               </div>
               <div id="collapsePanel5" class="panel-collapse collapse">
+                <img src="./src/images/cs491p1.png" alt="Project1" style="width: 100%; height: 100%;padding:10px 10px 10px 10px;">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu ullamcorper est. Vivamus luctus purus nulla. Ut nec pretium orci, nec consectetur diam. Curabitur sagittis, felis sit amet imperdiet convallis, dolor ligula tincidunt mi, ut dictum purus ante vel lacus. Pellentesque accumsan pretium aliquam. Integer maximus ex non dui tincidunt, quis cursus leo euismod. Cras euismod facilisis sagittis. Maecenas vitae malesuada leo, et eleifend mi. Morbi finibus arcu in est sodales consequat. In bibendum, mauris quis venenatis varius, felis metus malesuada sem, sit amet aliquam justo lacus vestibulum dui. Duis nec erat in tellus dapibus pharetra non eu lacus. Mauris accumsan enim quis facilisis vehicula.
+                  <b>Overview:</b><br>
+                  This was a collaborative project made for my Virtual/Augmented Reality Course (CS491) at the University of Illinois at Chicago. For this project, we were instructed to remake our classrooms at EVL into a room that would be our ideal office area. Our approach was to make a room that made us feel comfortable and at ease when working. In order to achieve both those goals, we decided to divide our office space into two main areas - a work area and a lounging area.
+                  <br><br>
+                  <b>Project Members:</b>
+                  <br>
+                  • Bartosz Kupiec – Undergraduate Student<br>
+                  • Dimitar Kirilov – Undergraduate Student (Me)<br>
+                  <br>
+                  <b>Demo:</b>
+                  <br>
+                  <iframe width="640" height="480" src="https://www.youtube.com/embed/9G_isl2dZGU" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                 </p>
               </div>
             </div>
@@ -136,8 +218,20 @@
                 </h4>
               </div>
               <div id="collapsePanel6" class="panel-collapse collapse">
+                <img src="./src/images/warwars.png" alt="WarWars" style="width: 100%; height: 100%;padding:10px 10px 10px 10px;">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu ullamcorper est. Vivamus luctus purus nulla. Ut nec pretium orci, nec consectetur diam. Curabitur sagittis, felis sit amet imperdiet convallis, dolor ligula tincidunt mi, ut dictum purus ante vel lacus. Pellentesque accumsan pretium aliquam. Integer maximus ex non dui tincidunt, quis cursus leo euismod. Cras euismod facilisis sagittis. Maecenas vitae malesuada leo, et eleifend mi. Morbi finibus arcu in est sodales consequat. In bibendum, mauris quis venenatis varius, felis metus malesuada sem, sit amet aliquam justo lacus vestibulum dui. Duis nec erat in tellus dapibus pharetra non eu lacus. Mauris accumsan enim quis facilisis vehicula.
+                  <b>Overview:</b><br>
+                  This was a collaborative project made for my Software Design Course (CS491) at the University of Illinois at Chicago. For this project, we created a top-down strategy game based off of the Fire Emblem series. The entire game was coded from scratch in Java and utilized several design patterns. More information about the project can be found at our project <a href="https://docs.google.com/document/d/1zwF77UoKWqC2kDMRkwoWGqfiJbBRGeje0rGu1bg2X0A/edit?ts=589bc961">Workbook</a>
+                  <br><br>
+                  <b>Project Members:</b>
+                  <br>
+                  • David Fulmer – Undergraduate Student<br>
+                  • Kaeyan Jones – Undergraduate Student<br>
+                  • Dimitar Kirilov – Undergraduate Student (Me)<br>
+                  <br>
+                  <b>Demo:</b>
+                  <br>
+                  <iframe width="640" height="480" src="https://www.youtube.com/embed/7-OHllcOmFo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                 </p>
               </div>
             </div>

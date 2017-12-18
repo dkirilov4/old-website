@@ -9,7 +9,7 @@ body
 .container-fluid
 {
   min-height: 100%;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .content
@@ -24,4 +24,9 @@ body
 
 #collapsePanel{
   padding: 10px 10px 10px 10px
+}
+
+#links
+{
+  bottom: 0;
 }
