@@ -1,0 +1,127 @@
+@font-face { font-family: Dungeon; src: url("font/PERRYGOT.TTF"); } 
+
+
+#character-creator-title {
+    margin-bottom: -15px;
+}
+
+#character-creator-container {
+    background: grey;
+    width: 300px;
+    height: 100%;
+}
+
+#character-creator-name-text {
+    background: lightgray;
+    width: 280px;
+    height: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+
+#character-creator-points-text {
+    background: lightgray;
+    width: 130px;
+    margin-left: 10px;
+    float: left;
+    height: 30px;
+}
+
+#character-creator-points-value {
+    background: lightgray;
+    width: 40px;
+    height: 30px;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#character-creator-points-button {
+    background: lightgray;
+    float: right;
+    margin-right: 10px;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+}
+
+#character-creator-stats-text {
+    background: lightgray;
+    float: left;
+    margin-left: 10px;
+    width: 130px;
+    height: 130px;
+}
+
+#character-creator-stats-values{
+    background: lightgray;
+    float: left;
+    margin-left: 10px;
+    width: 40px;
+    height: 130px;
+    text-align: center;
+}
+
+#character-creator-stats-buttons{
+    background: lightgray;
+    float: right;
+    margin-right: 10px;
+    width: 90px;
+    height: 130px;
+    text-align: center;
+}
+
+#character-create-button {
+    background: lightgray;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 280px;
+    height: 30px;
+}
+
+#cc-warning-text
+{
+    margin-left: 10px;
+    font-size: 12px
+}
+
+.stat-button {
+    background-color: rgb(199, 48, 43);
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    margin: 2px;    
+    cursor: pointer;
+    width: 2em;
+}
+
+.reset-button {
+    background-color: rgb(199, 48, 43);
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    margin: 1px; 
+    cursor: pointer;
+    width: 4em;
+}
+
+.create-character-button
+{
+    background-color: rgb(32, 167, 55);
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 2px;
+    margin-top: 2px;
+    width: 276px;
+    height: 26px;
+}

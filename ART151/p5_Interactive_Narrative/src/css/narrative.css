@@ -1,0 +1,171 @@
+@font-face { font-family: Crime; src: url("font/crimewave-bb.regular.TTF"); } 
+
+/* Screen Split: */
+#narrative-container
+{
+    font-size: 20px;
+    color: lightgray;
+    width: 100%;
+    height: 100%;
+}
+
+#narrative-story
+{
+    float: left;
+    width: 80%;
+    height: 100%;
+    
+    background: #292b3e;
+}
+
+#narrative-story-inner
+{
+    margin: 20px 20px 20px 20px;
+    height: 90%;
+    background:	#5c5b6b;
+}
+
+#divider
+{
+    float: right;
+    width: 2.5%;
+    height: 100%;
+    
+    background:	#a17f40;
+}
+
+/* Choices: */
+#narrative-choices
+{
+    float: right;
+    width: 17.5%;
+    height: 100%;
+    
+    background: #292b3e;
+}
+
+#narrative-choices-inner
+{
+    margin: 20px 20px 20px 20px;
+    height: 90%;
+    background: #5c5b6b;
+}
+
+#narrative-text
+{
+    margin: 20px 20px 20px 20px;
+    /* margin: 20px 20px 20px 20px;
+    height: 90%;
+    background:	#5c5b6b; */
+}
+
+/* Submit Button: */
+.submit-button {
+    background-color: #6b2b2b;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 10px 10px 10px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    width: 90%
+}
+  
+.submit-button:hover {opacity: 1}
+
+.accuse-button {
+    background-color: #6b2b2b;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 1px 10px 10px 10px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    width: 90%
+}
+  
+.accuse-button:hover {opacity: 1}
+
+#accuse-input
+{
+    margin: 10px 10px 0px 10px;
+    width: 90%;
+}
+
+/* Radio Buttons: */
+.block {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    transform: translateY(20px);
+}
+
+/* Hide the browser's default radio button */
+.block input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.block:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.block input:checked ~ .checkmark {
+    background-color: #962323
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.block input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.block .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
