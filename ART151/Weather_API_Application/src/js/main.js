@@ -141,7 +141,7 @@ function Drop()
     show = function()
     {
         noStroke();
-        fill(5, 100, 255, 100);
+        fill(5, 100, 255, 175);
         ellipse(x, y, d, h);
     }
 
