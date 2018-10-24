@@ -87,6 +87,7 @@ function draw()
     
     if (showWeather)
     {
+		select("#weather-canvas").style("display", "inline");
         if (destAirportData != null)
         {
             if ((destAirportData.weather[0].main) == "Rain")
@@ -109,7 +110,11 @@ function draw()
                     cloudX = width;
             }
         }
-    } 
+    }
+	else
+    {
+        select("#weather-canvas").style("display", "none");
+    }
 }
 
 // Rain Drops:   
