@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+
+    <!-- CSS Source: -->
+      <link rel = "stylesheet" href = "src/css/index.css"/>
+      <link rel = "stylesheet" href = "src/css/title.css"/>
+      <link rel = "stylesheet" href = "src/css/gestures.css"/>
+      <link rel = "stylesheet" href = "src/css/score.css"/>
+      <link rel = "stylesheet" href = "src/css/boxes.css"/>
+      <link rel = "stylesheet" href = "src/css/model-interface.css"/>
+      <link rel = "stylesheet" href = "src/css/info.css"/>
+    
+
+    <!-- JS Libraries/Addons: -->
+      <!-- JQuery -->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+      <!-- P5 -->
+      <script src = "lib/p5/p5.js"></script>
+      <script src = "lib/p5/addons/p5.dom.js"></script>
+      <!-- D3 -->
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+      <!-- Tensor Flow JS -->
+      <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.3/dist/tf.min.js"> </script>
+
+    <!-- JS Source: -->
+      <script src = "src/js/ui.js"></script>
+      <script src = "src/js/controller-dataset.js"></script>
+      <script src = "src/js/webcam.js"></script>
+      <script src = "src/js/index.js"></script>
+
+  </head>
+
+  <body>
+    <div id = "content">
+        <!-- <div id = "gestures"></div>
+        <div id = "model-interface"></div>
+        <div id = "webcam-box"></div> -->
+        <div id = "title"> 
+          <h1>Rock-Paper-Scissors + Machine Learning</h1>
+        </div>
+        <div id = "gestures"></div>
+        <div id = "game-content">
+          <div id = "score"></div>
+          <div id = "player-box"></div>
+          <div id = "vs-box"></div>
+          <div id = "computer-box"></div>
+          <div id = "model-interface"></div>
+          <div id = "info">
+            <h4>Instructions:</h4>
+            <p>1. Place your hand inside the orange box, and create a gesture you want to train (rock, paper, or scissors) the neural network on. Avoid having other parts of your body in the frame.</p>
+            <p>2. With your hand inside the box, click on the corresponding gesture which you are making on the left. This provides the network an example to look at.</p>
+            <p>3. Provide examples of each gesture at least 30 times. Once done, click the "Train" button. After it's done training, click "Predict"</p>
+            <p>4. You are now ready to play! Click "Shoot" and you will have a 3 second countdown timer to shoot the hand you want to play.</p>
+            <h5>by: Dimitar Kirilov</h5>
+          </div>
+        </div>
+    </div>
+  
+  </body>
+
+</html>

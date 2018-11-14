@@ -1,0 +1,54 @@
+#player-box
+{
+    width: 42%;
+    height: 48%;
+
+    background-color: white;
+
+    float: left;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    border: 1px solid #c4c4c4;
+}
+
+#vs-box
+{
+    width: 10%;
+    height: 48%;
+
+    float: left;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    background-color: white;
+
+    border: 1px solid #c4c4c4;
+}
+
+#vs-box text
+{
+    font-family: "Verdana", Times, serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#computer-box
+{
+    width: 42%;
+    height: 48%;
+
+    background-color: white;
+
+    float: left;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    border: 1px solid #c4c4c4;
+}

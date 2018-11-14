@@ -1,0 +1,24 @@
+#gestures
+{
+    width: 19%;
+    /* Firefox */
+    height: -moz-calc(85% + 5px);
+/* WebKit */
+    height: -webkit-calc(85% + 5px);
+/* Opera */
+    height: -o-calc(85% + 5px);
+/* Standard */
+    height: calc(85% + 5px);
+
+    float: left;
+
+    margin-left: 10px;
+    margin-top: 10px;
+
+    border: 1px solid #c4c4c4;
+}
+
+.gesture-unselected:hover
+{
+    opacity: 0.5;
+}

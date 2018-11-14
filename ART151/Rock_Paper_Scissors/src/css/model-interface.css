@@ -1,0 +1,76 @@
+#model-interface
+{
+    width: 97%;
+    height: 16%;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    background-color: white;
+    border: 1px solid #c4c4c4;
+
+    float: left;
+}
+
+#model-interface p
+{
+    font-family: "Verdana", Times, serif;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    
+    text-align: center;
+}
+
+#model-input
+{
+    width: 25%;
+    float: left;
+}
+
+
+.dropdown-select {
+    margin-left: 10px;
+    background: #5d5e61;
+    height: 30px;
+    overflow: hidden;
+    width: 150px;
+}
+
+.dropdown-select option {
+    background: #7c7e81;
+}
+
+.dropdown-select select {
+    font-family: "Verdana", Times, serif;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    height: 30px;
+    padding: 3px;
+    width: 150px;
+}
+
+select:hover { background-color: #f26422; } 
+
+#model-interface .button {
+    font-family: "Verdana", Times, serif;
+    background-color: #5d5e61;
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 10px 10px 10px;
+    cursor: pointer;
+    width: 48%;
+    height: 30%;
+}
+
+#model-interface .button:hover {
+    background-color:#f26422;
+}

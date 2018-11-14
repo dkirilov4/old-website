@@ -1,0 +1,30 @@
+#title
+{
+    position: relative;
+
+    width: 100%;
+    height: 10%;
+
+    background-color: white;
+    border-bottom: 5px solid #f26422
+}
+
+#title h1
+{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: center;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    font-size: 36px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: #5d5e61;
+    float: left;
+}
