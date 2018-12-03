@@ -270,7 +270,7 @@ function getPlanetTexture(planet)
     var path;
 
     if (TEXTURED_PLANETS.includes(planet.Pl_Name.toLowerCase())) {
-        path = "./assets/" + planet.Pl_Name + ".png"
+        path = "./assets/" + planet.Pl_Name.toLowerCase() + ".png"
     } else
     {
         var closestPlanet = TEXTURED_PLANETS[0];
