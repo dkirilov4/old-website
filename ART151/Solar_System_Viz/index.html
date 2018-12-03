@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+
+    <!-- CSS Source: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel = "stylesheet" href = "src/css/header.css" />
+    <link rel = "stylesheet" href = "src/css/selector.css" />
+    <link rel = "stylesheet" href = "src/css/system.css" />
+    <link rel = "stylesheet" href = "src/css/main.css" />
+
+    <!-- JS Libraries/Addons: -->
+      <!-- D3 -->
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+
+      <!-- JQuery -->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+              integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+              crossorigin="anonymous"></script>
+
+      <!-- JQuery UI -->
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+              integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+              crossorigin="anonymous"></script>
+      <!-- Select2 -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+    <!-- JS Source: -->
+    <script src = "src/js/sidebar.js"></script>
+    <script src = "src/js/panels.js"></script>
+    <script src = "src/js/main.js"></script>
+
+  </head>
+
+  <body class = "vbox viewport">
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar"> 
+    </div>
+
+    <!-- Main Content -->
+    <div id = "main">
+      <!-- <div id = "creationMenu">
+        <div class = "star-creation">
+            <div class = "create-group">
+                <div class = "create-text">Star Name:</div>
+                <div class = "create-input"><input type="text" class="input-form" name="stname"></div>
+            </div>
+            <div class = "create-group">
+                <div class = "create-text">Star Age:</div>
+                <div class = "create-input"><input type="text" class="input-form" name="stage"></div>
+            </div>
+            <div class = "create-group">
+                <div class = "create-text">Star Temperature:</div>
+                <div class = "create-input"><input type="text" class="input-form" name="sttemp"></div>
+            </div>
+            <div class = "create-group">
+                <div class = "create-text">Star Mass (Solar): :</div>
+                <div class = "create-input"><input type="text" class="input-form" name="stmass"></div>
+            </div>
+            <div class = "create-group">
+                <div class = "create-text">Star Radius (Solar):</div>
+                <div class = "create-input"><input type="text" class="input-form" name="strad"></div>
+            </div>
+            <div class = "create-group">
+                <div class = "create-text">Star Spectral Type:</div>
+                <div class = "create-input"><input type="text" class="input-form" name="sttype"></div>
+            </div>
+
+            <button class = "star-btn" onclick="addStarToNewSystem()"><i class="fa fa-plus-circle"></i></button>
+        </div>
+
+        <div class = "planet-creation">
+            <div class = "create-group">
+                <div class = "create-text">Planet Name:</div>
+                <div class = "create-input"><input type="text" class="input-form" name="plname"></div>
+            </div>
+            <div class = "create-group">
+                <div class = "create-text">Planet Mass (Earth):</div>
+                <div class = "create-input"><input type="text" class="input-form" name="plmass"></div>
+            </div>
+            <div class = "create-group">
+                <div class = "create-text">Planet Radius (Earth):</div>
+                <div class = "create-input"><input type="text" class="input-form" name="plname"></div>
+            </div>
+            <div class = "create-group">
+                <div class = "create-text">Semi Major Axis:</div>
+                <div class = "create-input"><input type="text" class="input-form" name="plname"></div>
+            </div>
+
+            <button class = "planet-btn" onclick="addPlanetToNewSystem()"><i class="fa fa-plus-circle"></i></button>
+        </div>
+
+      </div> -->
+        <!-- Header -->
+          <div class = "header hbox" id = "header">
+              <!-- Settings Button-->
+              <!-- <div id = "settings" class = "settings">
+                  <button class="settings-btn" onclick="toggleSettings()">☰</button>
+              </div> -->
+              <!-- Title -->
+              <div class = "title">Multi-Planet Systems Visualization</div>
+              <div id = "info">
+                <span><i class = "fa fa-info-circle"></i></span>
+              </div>
+              
+          </div>
+
+        <!-- Selector -->
+        <div id = "settings-div">
+          <!-- Filters -->
+          <div id = "filters">
+            <text><span><i class = "fa fa-filter"></i></span>&nbspFilters:</text>
+          </div>
+          
+          <div id = "selector">
+            <text>Add Solar System: </text>
+            <select class = "dropdown-select" id = "dropdown-select"></select>
+            <button class = "btn plus" onclick = "addSystemPanel()"><i class = "fa fa-plus"></i></button>
+          </div>
+
+          <!-- Sort -->
+          <div id = "sort">
+              <button class = "sort-btn" onclick = "sortSystemList()">Sort:&nbsp&nbsp<i class = "fa fa-sort"></i></button>
+
+            <form action="#" id = "sort-radio">
+                <label>
+                  <input name="sort" value = "Most Planets" type="radio" checked />
+                  <span>Most Planets</span>
+                </label>
+                <label>
+                  <input name="sort" value = "Most Habitable Planets" type="radio"/>
+                  <span>Most Habitable Planets</span>
+                </label>
+          </form>
+          </div>
+
+          <!-- Create -->
+          <!-- <div id = "create">
+            <button class = "create-btn" onclick="toggleCreationMenu()">Create Custom System:&nbsp&nbsp<i class = "fa fa-id-card"></i></button>
+        </div> -->
+          
+        </div>
+        
+
+        <div id = "all-systems"></div>
+    </div>
+  </body>
+
+</html>

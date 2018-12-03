@@ -1,0 +1,89 @@
+/* Parent: */
+.header {
+    height: 5%;
+
+    background: #121621;
+    border: 1px solid #c0c7de;
+    padding: 5px;
+    margin: 5px;
+
+    justify-content: space-between;
+}
+
+/* Title: */
+.title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #c0c7de;
+
+    margin: 0px 10px;
+}
+
+#info {
+    display: flex;
+    float: right;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fa-info-circle{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+/* Settings Button: */
+.settings {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 5px;
+}
+
+.settings-btn {
+    background-color: #121621;
+    border: none;
+
+    font-size: 22px;
+    color: #c0c7de;
+
+    cursor: pointer;
+}
+
+.settings-btn:hover {
+background-color: #1b2026;
+}
+
+/* Settings Sidebar: */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}

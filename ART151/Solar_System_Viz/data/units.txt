@@ -1,0 +1,27 @@
+# COLUMN fpl_hostname:   Host Name						
+# COLUMN fpl_letter:     Planet Letter						
+# COLUMN fpl_name:       Planet Name						
+# COLUMN fpl_discmethod: Discovery Method						
+# COLUMN fpl_disc:       Year of Discovery						
+# COLUMN fpl_orbper:     Orbital Period [days]												
+# COLUMN fpl_smax:       Orbit Semi-Major Axis [AU]						
+# COLUMN fpl_eccen:      Eccentricity						
+# COLUMN fpl_bmasse:     Planet Mass or M*sin(i) [Earth mass]						
+# COLUMN fpl_rade:       Planet Radius [Earth radii]						
+# COLUMN fpl_dens:       Planet Density [g/cm**3]						
+# COLUMN fpl_eqt:        Equilibrium Temperature [K]						
+# COLUMN fpl_insol:      Insolation Flux [Earth flux]						
+# COLUMN fpl_snum:       Number of Stars in System	
+					
+# COLUMN fst_dist:       Distance [pc]						
+# COLUMN fst_optmag:     Optical Magnitude [mag]						
+# COLUMN fst_spt:        Spectral Type						
+# COLUMN fst_teff:       Effective Temperature [K]						
+# COLUMN fst_logg:       Stellar Surface Gravity [log10(cm/s**2)]						
+# COLUMN fst_lum:        Stellar Luminosity [log10(Solar luminosity)]						
+# COLUMN fst_mass:       Stellar Mass [Solar mass]						
+# COLUMN fst_rad:        Stellar Radius [Solar radii]						
+# COLUMN fst_met:        Stellar Metallicity [dex]						
+# COLUMN fst_metratio:   Metallicity Ratio						
+# COLUMN fst_age:        Stellar Age [Gyr]						
+						

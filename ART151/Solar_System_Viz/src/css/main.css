@@ -1,0 +1,92 @@
+html, body, .viewport, #main {
+    background: #1b2026;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    /* overflow-x: auto; */
+    /* overflow-y: none; */
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#main, #header{
+    transition: margin-left .5s;
+}
+
+/* Flex + Expand Vertically */
+.vbox {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flex + Expand Horizontally: */
+.hbox {
+    display: flex;
+    flex-direction: row;
+}
+
+#tooltip {
+    position: absolute;
+    padding: 5px;
+    font: 12px sans-serif;
+    color: #c0c7de;
+    background: #121621;;	
+    border: 1px solid #c0c7de;	
+    border-radius: 4px;			
+    pointer-events: none;	
+}
+
+#creationMenu {
+    position: absolute;
+    color: #c0c7de;
+    background: #121621;;	
+}
+
+#creationMenu {
+    display: flex;
+    flex-direction: row;
+}
+
+.star-creation {
+    display: flex;
+    flex-direction: column;
+}
+
+.planet-creation {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-group {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.create-text {
+    flex: 1;
+}
+
+.create-input {
+    flex: 1;
+}
+
+.tooltip-text-title {
+    font-weight: bold;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+    letter-spacing: 1px;
+}
+
+.tooltip-text-main {
+    font-weight: bold;
+}
+
+#creationMenu {
+    opacity: 0;
+}
