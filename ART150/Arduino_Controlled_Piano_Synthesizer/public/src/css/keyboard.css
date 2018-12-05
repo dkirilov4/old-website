@@ -1,0 +1,59 @@
+#keyboard-wrapper {
+    flex: 3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-height: 35%;
+}
+
+#keyboard {
+    display: flex;
+    flex-direction: row;
+}
+
+#keyboard svg {
+    order: 2;
+}
+
+.octave-btn {
+    font-size: 24px;
+    color: white;
+    background: #2a2930;
+    border: none;
+    margin: 0 10px 10px 15px;
+}
+
+.left-btn {
+    order: 1;
+}
+
+.right-btn {
+    order: 3;
+}
+
+#instrument-select {
+    margin: 10px 0 0 0;
+    min-height: 40px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.instrument-btn {
+    font-size: 24px;
+    color: white;
+    background: #2a2930;
+    border: none;
+    margin: 0px 10px;
+    transition: 250ms;
+}
+
+.instrument-btn:hover , .octave-btn:hover {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 32px;
+    transition: 250ms;
+}

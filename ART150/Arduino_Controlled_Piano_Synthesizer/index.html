@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arduino - ART 150</title> 
+        <meta charset = "utf-8">
+        <meta name = "viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    
+        <!-- JS Libraries: -->
+            <!-- Socket IO: -->
+            <script src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+
+            <!-- D3: -->
+            <script src = "https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+
+            <!-- JQuery -->
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+
+            <!-- WaveSurfer -->
+            <script src="https://unpkg.com/wavesurfer.js"></script>
+
+        <!-- CSS Source: -->
+        <link rel="stylesheet" type="text/css" href="/src/css/timeline.css">
+        <link rel="stylesheet" type="text/css" href="/src/css/keyboard.css">
+        <link rel="stylesheet" type="text/css" href="/src/css/main.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- JS Source: -->
+        <script src = "/src/js/timeline.js"></script>
+        <script src = "/src/js/recorder.js"></script>
+        <script src = "/src/js/keyboard.js"></script>
+
+    </head>
+
+    <body>
+        <div id = "content-wrapper" class = "main-style">
+            <!-- Header: -->
+            <div id = "header" class = "main-style"><text class = "title">ART 150 - Arduino Keyboard Synthesizer</text></div>
+            <!-- WaveForm Timeline: -->
+            <div id = "timeline" class = "main-style"></div>
+            <!-- Keyboard -->
+            <div id = "keyboard-wrapper" class = "main-style">
+                <div id = "instrument-select">
+                    <button class = "instrument-btn piano-btn" onclick = "piano.changeInstrument('piano')">Piano</button>
+                    <button class = "instrument-btn acoustic-btn" onclick = "piano.changeInstrument('acoustic')">Guitar</button>
+                    <button class = "instrument-btn organ-btn" onclick = "piano.changeInstrument('organ')">Organ</button>
+                    <button class = "instrument-btn edm-btn" onclick = "piano.changeInstrument('edm')">EDM</button>
+                </div>
+                <div id = "keyboard">
+                  <button class = "octave-btn right-btn" onclick = "piano.changeOctave(1)"><i class="fa fa-caret-right"></i></button>
+                  <button class = "octave-btn left-btn" onclick = "piano.changeOctave(-1)"><i class="fa fa-caret-left"></i></button>
+                  <input type="range" min="1" max="10" value="2" step = "0.5" class="note-slider" id="note-slider" onchange="piano.changePitch()">
+                  <text id = "note-slider-text">Pitch Duration</text>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+
+        <script src="/client.js"></script>
+        <script src = "/lib/audiosynth.js"></script>
+    </body>
+</html>
